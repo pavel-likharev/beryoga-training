@@ -4,7 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Beryoga</title>
+  <title>BerYoga</title>
+  <link rel="preload" href="fonts/fivosansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/fivosansregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/fivosanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/fivosansheavy.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -12,11 +17,11 @@
 
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo">Beryoga</a>
+        <a class="header__logo">BerYoga</a>
         <nav class="navigation">
           <ul class="navigation__list">
-            <li class="navigation__item navigation__item--active">
-              <a class="navigation__link">Home</a>
+            <li class="navigation__item ">
+              <a class="navigation__link navigation__link--active">Home</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">About us</a>
@@ -29,7 +34,7 @@
             </li>
           </ul>
         </nav>
-        <button class="header__button-login button button--header">Login</button>
+        <button class="header__button-login button">Login</button>
       </div>
     </header>
     <main class="main">
@@ -37,20 +42,16 @@
 
       <section class="welcome">
         <div class="welcome__wrapper">
-          <h2 class="welcome__header">
-            Beautiful videos.
+          <h2 class="welcome__header">Beautiful videos.
             Become your best self with BerYoGa.
           </h2>
 
-          <p class="welcome__description">
-            For me, BerYoga is more than just a sport – it is lifestyle, a state mind, a philosophy.
-            Now I decided to open BerYoga so that I can share my love and joy of bikram yoga.
-            It is my hope that you too can discover all the positive impacts of bikram yoga and make bikram yoga as a
-            part of your life.
+          <p class="welcome__description">For me, BerYoga is more than just a sport – it is lifestyle, a state mind, a philosophy.
+            Now I decided to open BerYoga so that I can share my love and joy of bikram yoga. It is my hope that you too can discover all the positive impacts of bikram yoga and make bikram yoga as a part of your life.
           </p>
           <div class="welcome__action">
             <button class="welcome__button button">Service</button>
-            <button class="welcome__button button">Sign-up</button>
+            <button class="welcome__button welcome__button--sign button">Sign Up</button>
           </div>
         </div>
       </section>
@@ -62,16 +63,16 @@
             world. Unlimited access for $150/Years.</p>
           <div class="advantages__list-container">
             <ul class="advantages__list">
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--time">
                 <h3 class="advantages__feature">Lifetime Updates</h3>
                 <p class="advantages__feature-description">Free lifetime updates for our lates collection.</p>
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--videos">
                 <h3 class="advantages__feature">Anywhere Videos</h3>
                 <p class="advantages__feature-description">Access world-class online yoga videos can be seen on the
                   application & web</p>
               </li>
-              <li class="advantages__item">
+              <li class="advantages__item advantages__item--access">
                 <h3 class="advantages__feature">Access Unlimited</h3>
                 <p class="advantages__feature-description">Find lots of yoga video tutorials, from all over the world
                 </p>

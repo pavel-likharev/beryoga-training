@@ -1,0 +1,44 @@
+.navigation {
+  width: 1030px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.navigation__list {
+  .list-reset();
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation__item {
+  margin-right: 65px;
+  margin-left: 65px;
+}
+
+.navigation__link {
+  .link-reset();
+
+  line-height: 36px;
+  color: #1c2056;
+  text-transform: capitalize;
+  opacity: 0.5;
+
+  transition: 0.3s;
+
+  &--active {
+    font-weight: 700;
+    color: @orange;
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    color: @orange;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

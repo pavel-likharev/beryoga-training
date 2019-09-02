@@ -1,0 +1,81 @@
+// *{
+//  outline: 1px dashed lightgrey;
+// }
+
+@font-face {
+  font-family: "Fivo Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/fivosanslight.woff2") format("woff2"), url("../fonts/fivosanslight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Fivo Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/fivosansregular.woff2") format("woff2"), url("../fonts/fivosansregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Fivo Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/fivosansbold.woff2") format("woff2"), url("../fonts/fivosansbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Fivo Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/fivosansheavy.woff2") format("woff2"), url("../fonts/fivosansheavy.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Fivo sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.sprite {
+  display: none;
+}
