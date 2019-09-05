@@ -1,0 +1,66 @@
+.ways {
+  width: 100%;
+
+  background-image: url("../img/background-flower-reverse.png"),
+    url("../img/background-wave-3.png");
+  background-size: 194px 431px,
+    194px 487px;
+  background-position: right 150px,
+    right top;
+  background-repeat: no-repeat,
+    no-repeat;
+}
+
+.ways__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: @min-width;
+  padding: 68px 73px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+  background-image: url("../img/therapy.png");
+  background-size: 629px 735px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.ways__header {
+  .headline-style();
+
+  width: 680px;
+  margin-bottom: 90px;
+}
+
+.ways__description {
+  width: 555px;
+  margin: 0;
+
+  font-weight: 300;
+  text-indent: 50px;
+  opacity: 0.65;
+}
+
+.ways__link {
+  .link-reset();
+  width: 110px;
+  margin-right: 445px;
+  margin-top: 80px;
+
+  color: @blue;
+  font-weight: 400;
+  font-style: italic;
+
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    color: @orange;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

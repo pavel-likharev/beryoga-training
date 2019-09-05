@@ -1,0 +1,150 @@
+.pricing {
+  width: 100%;
+}
+
+.pricing__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: @min-width;
+  padding: 120px 240px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+.pricing__list {
+  .list-reset();
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+}
+
+.pricing__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 460px;
+
+  background-color: white;
+  box-shadow: 0 42px 35px 0 rgba(255, 106, 109, 0.15);
+  border-radius: 25px;
+
+  &--best {
+    position: absolute;
+    top: -50px;
+    left: 453px;
+    width: 504px;
+
+    box-shadow: 0 37px 136px 0 rgba(255, 106, 109, 0.19);
+  }
+}
+
+.pricing__header {
+  margin: 0;
+
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.pricing__item--best > .pricing__header {
+  width: 100%;
+  margin: 0;
+  padding: 42px 100px;
+
+  color: white;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: @orange;
+
+  border-radius: 25px 25px 0 0;
+}
+
+.pricing__options-list {
+  .list-reset();
+
+  padding: 50px 60px;
+  padding-bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing__option {
+  position: relative;
+  padding: 5px 60px;
+  margin-bottom: 30px;
+
+  line-height: 30px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 38px;
+    height: 38px;
+
+    background-image: url("../img/circle-checkbox.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--header {
+    &::before {
+      background-image: none;
+    }
+  }
+}
+
+.pricing__price {
+  font-size: 150px;
+  line-height: 200px;
+  text-align: center;
+}
+
+.pricing__price sup,
+.pricing__price sub {
+  font-size: 48px;
+}
+
+.pricing__price sup {
+  font-size: 48px;
+  vertical-align: super;
+}
+
+.pricing__offer {
+  padding: 0;
+  margin: 0;
+
+  line-height: 30px;
+  font-style: italic;
+}
+
+.pricing__button {
+  margin-top: 55px;
+  margin-bottom: 55px;
+
+  color: white;
+}
+
+.pricing__button:not(.pricing__button--best) {
+  background: linear-gradient(66deg, rgb(95, 206, 245) 0%, rgb(131, 228, 252) 100%);
+  box-shadow: 0 21px 23.52px 0.48px rgba(95, 206, 244, 0.29);
+
+  &:hover,
+  &:active {
+    box-shadow: 0 0 15px 2px rgba(95, 206, 244);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
