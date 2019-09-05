@@ -1,0 +1,62 @@
+.features {
+  width: 100%;
+  z-index: 3;
+
+  background-image: url("../img/background-flower.png"),
+    url("../img/background-wave.png");
+  background-size: 178px 377px,
+    132px 488px;
+  background-position: left center,
+    right center;
+  background-repeat: no-repeat,
+    no-repeat;
+}
+
+.features__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: @min-width;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 68px 130px;
+
+  background-image: url("../img/practice.png");
+  background-size: 661px 640px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.features__header {
+  .headline-style();
+
+  width: 555px;
+  margin-bottom: 90px;
+}
+
+.features__list {
+  .list-reset();
+
+  display: flex;
+  flex-direction: column;
+  width: 555px;
+  padding-left: 70px;
+}
+
+.features__feature-name {
+  .headline-style();
+
+  position: relative;
+
+  font-size: 24px;
+  line-height: 40px;
+
+  &::before {
+    .checkbox();
+  }
+}
+
+.features__feature-description {
+  opacity: 0.65;
+}

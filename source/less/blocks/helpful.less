@@ -1,0 +1,86 @@
+.helpful {
+  width: 100%;
+
+  background-image: url("../img/background-wave-2.png");
+  background-size: 219px 445px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.helpful__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: @min-width;
+  margin: 0 auto;
+  padding: 170px 55px;
+
+  background-image: url("../img/healing.png");
+  background-size: 661px 640px;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+.helpful__author {
+  position: relative;
+  width: 330px;
+  padding-left: 60px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 40px;
+  opacity: 0.5;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+
+    width: 70px;
+    height: 1px;
+
+    background-color: black;
+    opacity: 0.5;
+  }
+}
+
+.helpful__header {
+  .headline-style();
+
+  width: 740px;
+  padding: 10px 60px;
+  margin-bottom: 60px;
+}
+
+.helpful__description {
+  width: 740px;
+  padding-left: 120px;
+  padding-right: 240px;
+  margin-bottom: 80px;
+
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+.helpful__link {
+  .link-reset();
+  width: 110px;
+  margin-left: 120px;
+
+  color: @blue;
+  font-weight: 400;
+  font-style: italic;
+
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    color: @orange;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
