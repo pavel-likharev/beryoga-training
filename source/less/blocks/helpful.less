@@ -11,13 +11,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: @min-width;
+  width: @desktop-width;
   margin: 0 auto;
-  padding: 170px 55px;
+  padding: 150px 55px;
 
   background-image: url("../img/healing.png");
   background-size: 661px 640px;
-  background-position: right top;
+  background-position: right center;
   background-repeat: no-repeat;
 }
 
@@ -83,4 +83,44 @@
   &:active {
     opacity: 0.5;
   }
+}
+
+@media (max-width: @desktop-width) {
+  .helpful__wrapper {
+    width: @laptop-width;
+    padding: 100px;
+  }
+}
+
+@media (max-width: @laptop-width) {
+  .helpful__wrapper {
+    width: @tablet-width;
+    padding: 50px 0;
+    background-size: 60%;
+    background-position: right bottom;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .helpful__wrapper {
+    width: 100%;
+    background-image: none;
+  }
+
+  .helpful__header {
+    width: 100%;
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .helpful__description {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  .helpful__link {
+    align-self: flex-end;
+    margin-right: 30px;
+  }
+
 }
