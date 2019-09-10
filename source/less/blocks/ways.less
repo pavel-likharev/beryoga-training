@@ -16,10 +16,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: @min-width;
-  padding: 68px 73px;
+  width: @desktop-width;
+  padding: 150px 73px;
   margin: 0 auto;
-  margin-bottom: 100px;
 
   background-image: url("../img/therapy.png");
   background-size: 629px 735px;
@@ -62,5 +61,53 @@
 
   &:active {
     opacity: 0.5;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .ways__wrapper {
+    width: @laptop-width;
+    padding: 100px 20px;
+    background-size: 45%;
+  }
+}
+
+@media (max-width: @laptop-width) {
+  .ways__wrapper {
+    width: @tablet-width;
+    padding: 50px 20px;
+  }
+
+  .ways__header {
+    font-size: 36px;
+  }
+
+  .ways__description {
+    width: 400px;
+  }
+
+  .ways__link {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .ways {
+    background-image: none;
+  }
+
+  .ways__wrapper {
+    width: 100%;
+    background-image: none;
+  }
+
+  .ways__header {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .ways__description {
+    width: 100%;
   }
 }
